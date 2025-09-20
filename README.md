@@ -40,7 +40,7 @@ Flow ist kein Geschenk. Flow hat einen Preis.
 
 ---
 
-## Kapitel 3: Privjet Dawei Dawei
+## Kapitel 3: Привет Давай, давай!
 
 Привет! Hallo Welt.  
 Давай, давай! Auf geht’s, los jetzt, keine Ausreden mehr.  
