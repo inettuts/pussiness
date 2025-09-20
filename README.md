@@ -55,3 +55,29 @@ So wie auf dem Meer:
 Du kannst dein Boot perfektionieren, deine Segel trimmen, dein Butterfly üben – aber erst wenn du „Dawei, Dawei!“ hörst, wenn Wind und Wellen dich herausfordern, weißt du, ob du wirklich im Flow bist.  
 
 ---
+@startuml
+!theme plain
+
+skinparam defaultFontName Monospace
+skinparam rectangle {
+  Rounded true
+  BorderColor black
+  FontSize 12
+}
+
+rectangle "Einfach\n(Klar, Standard)" as Einfach #lightgrey
+rectangle "Kompliziert\n(Wissen, Analyse)" as Kompliziert #lightblue
+rectangle "Komplex\n(Experimente, Muster)" as Komplex #lightgreen
+rectangle "Chaotisch\n(Aktion, Stabilisieren)" as Chaotisch #lightcoral
+
+circle "Flow\n= vorbereitetes Chaos" as Flow #white
+
+Einfach -down-> Kompliziert
+Kompliziert -right-> Komplex
+Komplex -down-> Chaotisch
+Chaotisch -left-> Einfach
+
+Flow -[dotted]-> Komplex
+Flow -[dotted]-> Chaotisch
+
+@enduml
